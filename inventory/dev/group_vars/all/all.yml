@@ -1,0 +1,3 @@
+---
+provision_vm_name: "{{ inventory_hostname }}"
+env: "dev"
