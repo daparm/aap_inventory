@@ -1,0 +1,20 @@
+---
+- name: Testing variables
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Display variables
+      ansible.builtin.debug:
+        msg: 
+          - "{{ inventory_hostname is search('dev') }}"
+          - "{{ inventory_hostname is search('test') }}"
+          - "{{ inventory_hostname is search('prod') }}"
+
+    - name: Display entire hostvars
+      ansible.builtin.debug:
+        var: hostvars[inventory_hostname]
+
+
+    - name: ping
+      ansible.builtin.ping:

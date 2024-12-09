@@ -14,4 +14,5 @@ all:
         app_dev:
           hosts:
             app1-dev.example.com:
+              ansible_host: 192.168.178.83
             app2-dev.example.com:
