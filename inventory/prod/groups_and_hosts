@@ -3,15 +3,15 @@ all:
   children:
     prod:
       children:
-        web:
+        web_prod:
           hosts:
             web1-prod.example.com:
             web2-prod.example.com:
-        database:
+        database_prod:
           hosts:
             database1-prod.example.com:
             database2-prod.example.com:
-        app:
+        app_prod:
           hosts:
             app1-prod.example.com:
             app2-prod.example.com:

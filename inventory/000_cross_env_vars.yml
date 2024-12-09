@@ -1,2 +1,3 @@
 ---
 cross_env_variable: "variable_across_all_variables"
+provision_vm_name: "{{ inventory_hostname }}"

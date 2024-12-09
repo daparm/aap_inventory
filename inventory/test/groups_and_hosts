@@ -3,15 +3,15 @@ all:
   children:
     test:
       children:
-        web:
+        web_test:
           hosts:
             web1-test.example.com:
             web2-test.example.com:
-        database:
+        database_test:
           hosts:
             database1-test.example.com:
             database2-test.example.com:
-        app:
+        app_test:
           hosts:
             app1-test.example.com:
             app2-test.example.com:
