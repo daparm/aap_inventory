@@ -1,4 +1,0 @@
----
-env: dev
-memory: 2048
-provision_vm_name: "{{ inventory_hostname }}"

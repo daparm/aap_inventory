@@ -1,15 +1,17 @@
 ---
 all:
   children:
-    web:
-      hosts:
-        web1-prod.example.com:
-        web2-prod.example.com:
-    database:
-      hosts:
-        database1-prod.example.com:
-        database2-prod.example.com:
-    app:
-      hosts:
-        app1-prod.example.com:
-        app2-prod.example.com:
+    prod:
+      children:
+        web:
+          hosts:
+            web1-prod.example.com:
+            web2-prod.example.com:
+        database:
+          hosts:
+            database1-prod.example.com:
+            database2-prod.example.com:
+        app:
+          hosts:
+            app1-prod.example.com:
+            app2-prod.example.com:
